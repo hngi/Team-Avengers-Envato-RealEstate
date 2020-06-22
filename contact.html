@@ -18,12 +18,12 @@
 
 <body>
 
-    <div class="container-fluid main-container">
+    <div class="contact-main-container">
         <!-- navbar section -->
         <div class="container-fluid top-container">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top header" id="myHeader">
                 <div class="container">
-                    <a class="navbar-brand" href="#" id="logo-link"><img src="assets/logo.svg" id="logo"></a>
+                    <a class="navbar-brand" href="#" id="logo-link"><img src="assets/images/logo.svg" id="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
                         id="nav-toggler">
@@ -48,28 +48,33 @@
                                     <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link top-link" href="#">About</a>
+                                <a class="nav-link top-link mr-md-3" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link top-link" href="#">Sign In</a>
+                                <a class="nav-link ml-md-5" href="#" id="sign-in-link">Sign In</a>
                             </li>
                         </ul>
-                        <a class="nav-link top-link" href="#"><button class="btn top-btn">Join Us</button></a>
+                        <a class="nav-link" href="#"><button class="btn top-btn">Join Us</button></a>
                     </div>
                 </div>
             </nav>
             <div class="container main-heading">
-                <h1>Get in touch with us</h1>
+                <h1 class="text-center">Get in touch <br> with us</h1>
             </div>
         </div>
 
         <!-- form section -->
         <div class="container form-section">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
+            <div class="row pb-4 m-0">
+                <div class="col-md-6 col-10">
+                    <h2>Send a Message</h2>
+                </div>
+                <div class="col-md-6 col-2 d-flex justify-content-end pr-md-5">
+                    <img src="./assets/images/message icon.svg" alt="">
+                </div>
             </div>
-            <div class="row">
+
+            <div class="row m-0">
                 <div class="col-md-6">
                     <form id="form-container">
                         <div class="form-group">
@@ -80,40 +85,47 @@
                             <label for="email">Email address</label>
                             <input type="email" class="form-control" id="email">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="position: relative;">
                             <label for="message">Example textarea</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
+                            <img src="./assets/images/form footer.svg" alt="form-footer" id="form-icon">
                         </div>
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <h1>image</h1>
+                    <div>
+                        <img src="./assets/images/contact-agent.png" alt="contact-agent-image" id="contact-agent">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid contact-info">
             <div class="container pt-5 pb-5">
                 <div class="row">
                     <div class="col-md-4 d-flex flex-column align-items-md-center justify-content-center">
-                        <div>
+                        <div class="pb-md-0 pb-3">
                             <h2>ADDRESS</h2>
                             <p>HQ office at 20, Alagomeji <br> Yaba, Lagos, Nigeria</P>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex flex-column align-items-md-center justify-content-center">
-                        <div>
+                        <div class="pb-md-0 pb-3">
                             <h2>Phone</h2>
-                            <p>+2348167758317</p>
-                            <p>+234802343478</p>
+                            <p><a href="tel:+2348167758317">+2348167758317</a></p>
+                            <p><a href="tel:+234802343478">+234802343478</a></p>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex flex-column align-items-md-center justify-content-center">
-                        <div>
-                            <p>www.linkedln.com/realDeal Int.</p>
-                            <p>www.facebook.com/realDeal Int.</p>
-                            <p>www.Instagram.com/realDeal Int.</p>
-                            <p>www.twitter.com/realDeal Int.</p>
+                        <div class="pb-md-0 pb-3">
+                            <p><a href=""><img src="./assets/images/linkedin.png" alt="linkedin" class="mr-1">
+                                    www.linkedln.com/realDeal Int.</a></p>
+                            <p><a href=""><img src="./assets/images/facebook.png" alt="facebook" class="mr-1">
+                                    www.facebook.com/realDeal Int.</a></p>
+                            <p><a href=""><img src="./assets/images/instagram.png" alt="instagram" class="mr-1">
+                                    www.Instagram.com/realDeal Int.</a></p>
+                            <p><a href=""><img src="./assets/images/twitter.png" alt="twitter" class="mr-1">
+                                    www.twitter.com/realDeal Int.</a></p>
                         </div>
                     </div>
                 </div>
@@ -124,35 +136,68 @@
             <div class="container pt-4 pb-5">
                 <div class="row">
                     <div class="col-md-3">
-                        <p>Lorem Ipsum edunaten unique la edu ne judit edpi labanautu homi
-                            nationeli estitiate evrywe monei sensei et mane mo erufuji desicodii esponage</p>
+                        <div class="">
+                            <img src="./assets/images/logo.svg" alt="logo" id="logo">
+                        </div>
+                        <div class="pb-md-0 pb-3 pt-3">
+                            <p>Lorem Ipsum edunaten unique la edu ne judit edpi labanautu homi
+                                nationeli estitiate evrywe monei sensei et mane mo erufuji desicodii esponage</p>
+                        </div>
                     </div>
-                    <div class="col-md-3 d-flex flex-column align-items-md-center">
-                        <div>
+                    <div class="col-md-3 pt-3 d-flex flex-column align-items-md-center">
+                        <div class="pb-md-0 pb-3">
                             <p>COMPANY</p>
-                            <P>About Us</P>
-                            <p>Services</p>
-                            <p>Clients</p>
-                            <p>Testimonials</p>
-                            <p>Careers</p>
+                            <a href="">
+                                <P>About Us</P>
+                            </a>
+                            <a href="">
+                                <p>Services</p>
+                            </a>
+                            <a href="">
+                                <p>Clients</p>
+                            </a>
+                            <a href="">
+                                <p>Testimonials</p>
+                            </a>
+                            <a href="">
+                                <p>Careers</p>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex flex-column align-items-md-center">
+                    <div class="col-md-3 pt-3 d-flex flex-column align-items-md-center">
                         <div>
-                            <p>HELP</p>
-                            <P>PRODUCT POLICY</P>
-                            <P>SUPPORT</P>
-                            <P>TERMS AND CONDITIONS</P>
-                            <P>GUIDELINES</P>
-                            <P>PAPERWORK</P>
+                            <a href="">
+                                <p>HELP</p>
+                            </a>
+                            <a href="">
+                                <P>PRODUCT POLICY</P>
+                            </a>
+                            <a href="">
+                                <P>SUPPORT</P>
+                            </a>
+                            <a href="">
+                                <P>TERMS AND CONDITIONS</P>
+                            </a>
+                            <a href="">
+                                <P>GUIDELINES</P>
+                            </a>
+                            <a href="">
+                                <P>PAPERWORK</P>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex flex-column align-items-md-center">
+                    <div class="col-md-3 pt-3 d-flex flex-column align-items-md-center">
                         <div>
                             <p>20, Alogomeji, Yaba
                                 <br> Lagos State, Nigeria</p>
-                            <p><b>+2348167758317</b></p>
-                            <p>m.realdeal@info.ng</p>
+                            <p><a href="tel:+2348167758317"><b>+2348167758317</b></a></p>
+                            <p><a href="mailto:m.realdeal@info.ng">m.realdeal@info.ng</a></p>
+                            <div class="row">
+                                <a href=""><img src="./assets/images/linkedin.png" alt="linkedin" class="pl-3"></a>
+                                <a href=""><img src="./assets/images/facebook.png" alt="linkedin" class="pl-3"></a>
+                                <a href=""><img src="./assets/images/instagram.png" alt="linkedin" class="pl-3"></a>
+                                <a href=""><img src="./assets/images/twitter.png" alt="linkedin" class="pl-3"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,20 +207,20 @@
 
         <!-- footer section -->
         <div class="container"></div>
-    </div>
+        <!-- </div> -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="contact.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
