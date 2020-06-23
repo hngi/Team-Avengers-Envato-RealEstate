@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.top-container {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("./assets/images/background.png");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  width: 80%;
+}
+
+.navbar {
+  padding: 1.5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  border-bottom: 1px solid #f8b24f;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+  border-bottom: 1px solid #f8b24f;
+}
+
+.top-link {
+  margin: 0 19px;
+  color: #fff;
+}
+
+.top-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.top-btn:hover {
+  background-color: #f8b24f;
+  border-color: #f8b24f;
+  color: #000;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 78px;
+  min-height: calc(70vh - 78px);
+}
+
+.contact-main-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.contact-main-container p {
+  margin-bottom: 0.5rem;
+}
+
+.form-section {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(48, 58, 93, 0.11);
+  margin-top: -8rem;
+  padding: 3rem;
+  padding-right: 0;
+}
+
+#form-container {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+  padding: 2rem;
+}
+
+#form-icon {
+  position: absolute;
+  left: 90%;
+  top: 65%;
+}
+
+.contact-info a {
+  color: #000;
+}
+
+#contact-agent {
+  width: 100%;
+}
+
+.footer {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-link {
+    margin: 0 14px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .sticky {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .navbar {
+    background-color: #000;
+  }
+
+  #logo {
+    width: 110px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 78px;
+    background-color: #000;
+  }
+
+  #sign-in-link {
+    margin: 0 19px;
+  }
+
+  #form-container {
+    box-shadow: none;
+  }
+
+  .form-section {
+    padding: 5vw 0;
+    box-shadow: none;
+  }
+
+  #form-icon {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #contact-agent {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #contact-agent {
+    display: none;
+  }
+
+  .form-section {
+    padding: 20px 0 20px 0;
+    margin-top: 0;
+  }
+
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-main-container p {
+    font-size: 0.9em;
+  }
+}
